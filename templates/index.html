@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet href= "{{ url_for('static', filename='css/stylesheet.css') }}">
+    <meta charset="utf-8"/>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Project Firefox</title>
+  </head>
+  <body>
+    <div class="upload">
+      <div class="center-container">
+        <div class="framed">
+          <form action="upload" method="post" enctype="multipart/form-data">
+          <input class="left" type="file" name="file">
+          <input class="right" type="submit" value="Upload">
+          </form>
+        </div>
+      </div>
+    </div>
+      <div class="results">
+        <div class="center-container">
+          <div class="calcs">
+            <ul>
+              <header>PREVIOUS CALCULATIONS</header>
+              {% for calc in calcs %}
+                {% if calc.calculated %}
+                  <li><span class="msg left"><b>Calculations {{ calc.id }} </b>|| {{ calc.date }} {{ calc.time }} ||</span>
+                      <div class="button-theme-clr inline right">
+                        <a class="nohover" href= "{{ url_for('calculated_record', filename=calc.output_file) }}">Download</a>
+                      </div>
+                  </li>
+                {% else %}
+                  <li>
+                    <span class="msg left"><b>Calculations {{ calc.id }} </b>|| {{ calc.date }} {{ calc.time }} ||
+                    Your calculations are still in progress, or something went wrong. Refresh the page to update status.</span>
+                  </li>
+                {% endif %}
+              {% else %}
+                <li>There have been no calculations so far.</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
+ <!---Do the html and css to only be "acceptable" >
+ <!Carry on with the rest >

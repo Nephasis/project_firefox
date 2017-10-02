@@ -1,0 +1,29 @@
+.upload {
+  width: 100%;
+  margin-top: 50px;
+
+  .framed {
+    height: 30px;
+    padding: 10px 30px 10px 30px;
+    border: $clr-border;
+    @include border-radius(5px);
+  }
+
+  input[type=submit] {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #383838;
+    text-shadow: 0.5px 1px 1px white;
+    text-align: center;
+    @include border-radius(3px);
+    height: 30px;
+    width: 106px;
+    @include border-radius(3px);
+    @include gradient($theme-gradient1, $theme-gradient1-clrstop);
+      &:hover {
+        @include gradient($theme-gradient2, $theme-gradient2-clrstop);
+      }
+  }
+
+}

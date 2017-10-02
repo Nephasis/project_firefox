@@ -1,0 +1,22 @@
+
+$font-clr: #747474;
+
+$font-clr-dark: #383838;
+
+$theme-clr: #a0ce4e;
+
+$clr-border: 2px solid #D1D1D1;
+
+//BUTTON AND GRADIENT
+
+$button-font-clr: #54770f;
+
+$theme-gradient1: linear-gradient(bottom, rgb(123,156,67) 0%, rgb(170,215,93) 55%);
+
+$theme-gradient1-clrstop: linear, left bottom, left top,
+                          color-stop(0, rgb(123,156,67)),color-stop(0.55, rgb(170,215,93));
+
+$theme-gradient2: bottom, rgb(123,156,67) 89%, rgb(170,215,93) 55%;
+
+$theme-gradient2-clrstop: linear, left bottom, left top, color-stop(0.89, rgb(123,156,67)),
+                          color-stop(0.55, rgb(170,215,93));

@@ -1,0 +1,47 @@
+@import 'mixins/gradient';
+@import 'mixins/border_radius';
+
+.inline {
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.nohover {
+    &:hover {
+    color: $font-clr-dark;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.button-theme-clr {
+  padding: 0 1.5em 0 1.5em;
+  height: 43px;
+  line-height: 43px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $button-font-clr;
+  text-shadow: 0.5px 1px 1px white;
+  text-align: center;
+  @include border-radius(3px);
+  @include gradient($theme-gradient1, $theme-gradient1-clrstop);
+  cursor: pointer;
+
+  &:hover {
+    @include gradient($theme-gradient2, $theme-gradient2-clrstop);
+  }
+}

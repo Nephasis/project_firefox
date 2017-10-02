@@ -1,0 +1,169 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #747474;
+  word-spacing: -0.2em;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+@media all and (max-width: 805px) {
+  body {
+    width: 99%;
+  }
+}
+
+a {
+  color: #383838;
+  text-decoration: none;
+}
+a:hover {
+  color: #a0ce4e;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+article {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.nohover:hover {
+  color: #383838;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.button-theme-clr {
+  padding: 0 1.5em 0 1.5em;
+  height: 43px;
+  line-height: 43px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #54770f;
+  text-shadow: 0.5px 1px 1px white;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-image: linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -o- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -moz- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -webkit- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -ms- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #7b9c43), color-stop(0.55, #aad75d));
+  cursor: pointer;
+}
+.button-theme-clr:hover {
+  background-image: bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -o- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -moz- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -webkit- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -ms- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.89, #7b9c43), color-stop(0.55, #aad75d));
+}
+
+.upload {
+  width: 100%;
+  margin-top: 50px;
+}
+.upload .framed {
+  height: 30px;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid #d1d1d1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.upload input[type=submit] {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #383838;
+  text-shadow: 0.5px 1px 1px white;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  height: 30px;
+  width: 106px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-image: linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -o- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -moz- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -webkit- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -ms- linear-gradient(bottom, #7b9c43 0%, #aad75d 55%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #7b9c43), color-stop(0.55, #aad75d));
+}
+.upload input[type=submit]:hover {
+  background-image: bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -o- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -moz- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -webkit- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -ms- bottom, #7b9c43 89%, #aad75d 55%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.89, #7b9c43), color-stop(0.55, #aad75d));
+}
+
+.results {
+  width: 100%;
+  margin-top: 10px;
+}
+.results li {
+  width: 100%;
+  height: 53px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.results header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.calcs {
+  height: 600px;
+  padding: 30px;
+  border: 2px solid #d1d1d1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.msg {
+  display: block;
+  width: 75%;
+}
